@@ -9,3 +9,6 @@
 
 !.config/i3
 !.config/i3/config
+
+!.config/variety
+!.config/variety/variety.conf
