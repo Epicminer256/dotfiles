@@ -41,9 +41,17 @@ Other Productivity
 sudo pacman -Syu ttyper
 ```
 
+LightDM Setup
+```
+sudo pacman -Syu lightdm lightdm-gtk-greeter
+sudo systemctl enable lightdm
+
+# and reboot to apply
+```
+
 Everything else
 ```
-sudo pacman -Syu i3-wm i3status nvim gparted gufw gufw man rofi screen terminator picom univga variety vim xclip xscreensaver xss-lock
+sudo pacman -Syu i3-wm i3status nvim gparted gufw gufw man rofi screen terminator picom univga variety vim xclip xscreensaver xss-lock nitrogen
 yay pa-applet-git
 ```
 
