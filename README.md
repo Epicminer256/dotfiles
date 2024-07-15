@@ -53,7 +53,7 @@ Everything else
 ```
 yay sakura
 yay pxplus-ibm-vga8
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom variety vim xclip xscreensaver xss-lock nitrogen
+sudo pacman -Syu i3-wm i3status neovim gufw man rofi screen picom variety vim xclip xscreensaver xss-lock nitrogen
 yay pa-applet-git
 ```
 
