@@ -8,6 +8,15 @@
 
 !.config/nvim
 !.config/nvim/*
+
+!.config/nvim/lua
+
+!.config/nvim/lua/pkg-mgr
+!.config/nvim/lua/keybinds
+
+!.config/nvim/lua/pkg-mgr/*
+!.config/nvim/lua/keybinds/*
+
 .config/nvim/lazy-lock.json
 
 !.config/i3

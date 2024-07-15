@@ -51,8 +51,19 @@ sudo systemctl enable lightdm
 
 Everything else
 ```
-sudo pacman -Syu i3-wm i3status nvim gparted gufw gufw man rofi screen terminator picom univga variety vim xclip xscreensaver xss-lock nitrogen
+yay sakura
+yay univga
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom variety vim xclip xscreensaver xss-lock nitrogen
 yay pa-applet-git
+```
+
+To clone this repo
+```
+cd ~
+git init .
+git remote add origin https://github.com/epicminer256/dotfiles.git
+git fetch origin
+git reset origin/main
 ```
 
 # Useful stuff
