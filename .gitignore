@@ -34,6 +34,9 @@
 !.config/rofi
 !.config/rofi/*
 
+!.config/variety
+!.config/variety/variety.conf
+
 !.local
 !.local/share
 !.local/share/rofi
