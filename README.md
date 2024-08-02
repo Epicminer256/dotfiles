@@ -14,6 +14,15 @@ git reset origin/main
 git retore .
 ```
 
+Basic packages
+```
+yay sakura
+yay univga
+yay librewolf-bin # My browser
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock nitrogen
+yay pa-applet-git
+```
+
 Download some starter wallpapers (saved under /usr/share/backgrounds)
 ```
 sudo pacman -S archlinux-wallpaper
@@ -33,12 +42,15 @@ sudo pacman -Syu brightnessctl
 ```
 
 Setup appimage (I like having apps I can save locally and run across distros)
-After settings this up, it will install appimages to .local/share/applications and they will show up on the start screen.
 ```
 sudo pacman -S wget
 yay appimagelauncher
+mkdir ~/Applications
 ```
-And download [AppimagePool](https://github.com/prateekmedia/appimagepool/releases) and run it. Have it intigrate.
+And download [AppimagePool](https://github.com/prateekmedia/appimagepool/releases) and run it. Have it intigrate. Set the downloads folder to your downloads and your Applications folder to your Applications folder in your home folder
+
+Note: when installing apps in Appimage pool, goto your installed apps and integrate the apps with the Check button.
+
 
 Setup games
 ```
@@ -67,14 +79,6 @@ sudo systemctl enable lightdm
 # and reboot to apply
 ```
 
-Everything else
-```
-yay sakura
-yay univga
-yay librewolf-bin
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock nitrogen
-yay pa-applet-git
-```
 
 
 # Useful stuff
