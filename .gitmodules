@@ -1,0 +1,3 @@
+[submodule ".local/share/rofi"]
+	path = .local/share/rofi
+	url = https://github.com/newmanls/rofi-themes-collection/
