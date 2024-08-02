@@ -41,7 +41,9 @@ bindsym $mod+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+Right resize grow width 10 px or 10 ppt
 
 bindsym $mod+q kill
-bindsym $mod+space exec "rofi -modi drun,run -show drun"
+bindsym $mod+space exec "rofi -show drun"
+bindsym $mod+Tab exec "variety -n"
+bindsym $mod+Shift+Tab exec "variety -p"
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
