@@ -89,3 +89,6 @@ sudo systemctl enable lightdm
     - Learn the movement keys, then learn how to use "f" and "/". This will make browsing soo much faster
 - I beg you to use ublock origin, even if you are using Brave's built-in adblock
 - Harpoon GOAT in nvim
+- If you made your root directory encrypted, but it never asks for a password, make sure your mkinitpcio config is in the right order and your using the right kernal config.
+    - `HOOKS=(base udev autodetect microcode modconf kms keyboard keymap consolefont block encrypt filesystems fsck)`
+    - `cryptdevice=PARTUUID={partuuid}:{cryptsetupname} root=/dev/mapper/{cryptsetupname} rw`
