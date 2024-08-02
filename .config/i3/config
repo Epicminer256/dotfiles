@@ -1,4 +1,6 @@
 set $mod Mod4
+set $browser librewolf
+set $terminal sakura
 
 default_border pixel 0
 default_floating_border pixel 0
@@ -52,8 +54,7 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+Return exec sakura
-
+bindsym $mod+Return exec $terminal
 
 bindsym $mod+Shift+q exec i3-msg exit
 bindsym $mod+r floating toggle
@@ -68,7 +69,11 @@ bindsym $mod+p fullscreen toggle
 
 bindsym $mod+z restart
 
+<<<<<<< HEAD
 bindsym $mod+b exec librewolf
+=======
+bindsym $mod+b exec $browser
+>>>>>>> origin/master
 
 bindsym $mod+m focus parent
 bindsym $mod+n focus child

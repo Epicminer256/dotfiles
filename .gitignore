@@ -19,6 +19,9 @@
 
 .config/nvim/lazy-lock.json
 
+!.config/sakura
+!.config/sakura/*
+
 !.config/i3
 !.config/i3/config
 

@@ -32,6 +32,7 @@ Laptop stuff
 sudo pacman -Syu brightnessctl
 ```
 
+<<<<<<< HEAD
 Setup appimage (I like having apps I can save locally and run across distros)
 After settings this up, it will install appimages to .local/share/applications and they will show up on the start screen.
 ```
@@ -41,6 +42,14 @@ yay appimagelauncher
 And download [AppimagePool](https://github.com/prateekmedia/appimagepool/releases) and run it. Have it intigrate.
 
 Setup games
+=======
+Music and video
+```
+yay youtube-music-bin
+```
+
+Games and such
+>>>>>>> origin/master
 ```
 sudo pacman -Syu lutris wine winetricks
 yay taisei
@@ -70,9 +79,14 @@ sudo systemctl enable lightdm
 Everything else
 ```
 yay sakura
+<<<<<<< HEAD
 yay univga
 yay librewolf-bin
 sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock nitrogen
+=======
+yay pxplus-ibm-vga8
+sudo pacman -Syu i3-wm i3status neovim gufw man rofi screen picom variety vim xclip xscreensaver xss-lock feh
+>>>>>>> origin/master
 yay pa-applet-git
 ```
 
