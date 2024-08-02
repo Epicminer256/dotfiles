@@ -29,3 +29,10 @@
 !.config/sakura/sakura.conf
 
 !.config/appimagelauncher.cfg
+
+!.config/rofi
+!.config/rofi/*
+
+!.local
+!.local/share
+!.local/share/rofi
