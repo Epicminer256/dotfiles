@@ -42,8 +42,10 @@ bindsym $mod+Right resize grow width 10 px or 10 ppt
 
 bindsym $mod+q kill
 bindsym $mod+space exec "rofi -show drun"
-bindsym $mod+Tab exec "variety -n"
-bindsym $mod+Shift+Tab exec "variety -p"
+bindsym $mod+Tab exec "variety -n && notify-send 'Next Wallpaper'"
+bindsym $mod+Shift+Tab exec "variety -p && notify-send 'Previous Wallpaper'"
+bindsym $mod+d exec "variety -t && notify-send 'Deleted Wallpaper'"
+bindsym $mod+s exec "variety -f && notify-send 'Saved wallpaper'"
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
