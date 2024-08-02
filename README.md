@@ -19,7 +19,7 @@ git retore .
 Basic packages
 ```
 yay sakura
-yay univga
+yay pxplus-ibm-vga
 yay librewolf-bin # My browser
 sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock nitrogen
 yay pa-applet-git
