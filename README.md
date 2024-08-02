@@ -91,4 +91,5 @@ sudo systemctl enable lightdm
 - Harpoon GOAT in nvim
 - If you made your root directory encrypted, but it never asks for a password, make sure your mkinitpcio config is in the right order and your using the right kernal config.
     - `HOOKS=(base udev autodetect microcode modconf kms keyboard keymap consolefont block encrypt filesystems fsck)`
+        - Read [Arch Linux's mkinitcpio](https://wiki.archlinux.org/title/Mkinitcpio) for more info
     - `cryptdevice=PARTUUID={partuuid}:{cryptsetupname} root=/dev/mapper/{cryptsetupname} rw`
