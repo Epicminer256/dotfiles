@@ -4,6 +4,16 @@ These are my config files when I use GNU/Linux.
 
 # Setup (Arch)
 
+To clone this repo
+```
+cd ~
+git init .
+git remote add origin https://github.com/epicminer256/dotfiles.git
+git fetch origin
+git reset origin/main
+git retore .
+```
+
 Install yay
 ```
 sudo pacman -Syu --needed git base-devel
@@ -57,14 +67,6 @@ sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom variety vim xcli
 yay pa-applet-git
 ```
 
-To clone this repo
-```
-cd ~
-git init .
-git remote add origin https://github.com/epicminer256/dotfiles.git
-git fetch origin
-git reset origin/main
-```
 
 # Useful stuff
 
