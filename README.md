@@ -21,7 +21,7 @@ Basic packages
 yay sakura
 yay pxplus-ibm-vga
 yay librewolf-bin # My browser
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock nitrogen dunst
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst
 yay pa-applet-git
 ```
 
