@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+neofetch
+
 prim=$(tput setaf 1)
 sec=$(tput setaf 3)
 bold=$(tput bold)

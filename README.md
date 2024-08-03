@@ -18,10 +18,9 @@ git retore .
 
 Basic packages
 ```
-yay sakura
 yay pxplus-ibm-vga
 yay librewolf-bin # My browser
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator
 yay pa-applet-git
 ```
 
