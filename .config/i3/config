@@ -6,12 +6,13 @@ default_floating_border pixel 0
 gaps inner 2
 gaps outer 2
 
-font pango:monospace 8
+font pango:PxPlus IBM VGA8 10
 exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id variety
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
 exec --no-startup-id picom
+
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -99,9 +100,19 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 bar {
+	position top
 	status_command i3status
-}
+	colors {
+		background #000000
+		statusline #ffA500 #that neon blue
+		separator #666666
 
+		focused_workspace  #4c7899 #285577 #ffffff
+		active_workspace   #333333 #5f676a #ffffff
+		inactive_workspace #333333 #222222 #888888
+		urgent_workspace   #2f343a #900000 #ffffff
+	}
+}
 
 set $ws1 "1.Main"
 set $ws2 "2.Browser"
