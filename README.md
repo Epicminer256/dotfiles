@@ -44,13 +44,9 @@ sudo pacman -Syu brightnessctl
 
 Setup appimage (I like having apps I can save locally and run across distros)
 ```
-sudo pacman -S wget
 yay appimagelauncher
 mkdir ~/Applications
 ```
-And download [AppimagePool](https://github.com/prateekmedia/appimagepool/releases) and run it. Have it intigrate. Set the downloads folder to your downloads and your Applications folder to your Applications folder in your home folder
-
-Note: when installing apps in Appimage pool, goto your installed apps and integrate the apps with the Check button.
 
 
 Setup games
@@ -58,7 +54,6 @@ Setup games
 sudo pacman -Syu lutris wine winetricks
 yay taisei
 yay mindustry
-# These I would get from the appimage store
 yay osu-lazer
 yay prismlauncher
 
