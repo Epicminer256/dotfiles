@@ -20,7 +20,7 @@ Basic packages
 ```
 yay pxplus-ibm-vga
 yay librewolf-bin # My browser
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator gtk-chtheme materia-gtk-theme lxqt-policykit
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator gtk-chtheme materia-gtk-theme lxqt-policykit keepassxc
 yay pa-applet-git
 ```
 
@@ -94,3 +94,12 @@ sudo systemctl enable lightdm
     - `HOOKS=(base udev autodetect microcode modconf kms keyboard keymap consolefont block encrypt filesystems fsck)`
         - Read [Arch Linux's mkinitcpio](https://wiki.archlinux.org/title/Mkinitcpio) for more info
     - `cryptdevice=PARTUUID={partuuid}:{cryptsetupname} root=/dev/mapper/{cryptsetupname} rw`
+- I recommend using lutris for installing windows games, BUUUT I don't recommend using the "Search the Lutris website for installers"
+    - Instead, use "Add locally installed game", set your name and runner, set your wine prefix to where you want to install to, and save (don't worry about the executable rn)
+    - Goto https://appdb.winehq.org/ and find your game
+    - Follow the instuctions, but
+        - Ignore creating wine prefixes
+        - Use winetricks by selecting your game, and look at the bottom menu bar and click the wine icon, then click winetricks
+            - Use default prefix when it asks
+        - Launch the installer by clicking the wine icon on the bottom menu bar and "Run EXE inside Wine prefix"
+        - After that is done, configure the game with the executable inside the install folder
