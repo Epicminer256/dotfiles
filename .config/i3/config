@@ -31,6 +31,8 @@ bindsym $mod+XF86MonBrightnessUp exec brightnessctl s +100
 bindsym $mod+Shift+XF86MonBrightnessDown exec brightnessctl s 10-
 bindsym $mod+Shift+XF86MonBrightnessUp exec brightnessctl s +10
 
+bindsym $mod+Escape exec systemctl suspend
+
 floating_modifier $mod
 tiling_drag modifier titlebar
 
