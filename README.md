@@ -20,7 +20,7 @@ Basic packages
 ```
 yay pxplus-ibm-vga
 yay librewolf-bin # My browser
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator gtk-chtheme materia-gtk-theme lxqt-policykit
 yay pa-applet-git
 ```
 

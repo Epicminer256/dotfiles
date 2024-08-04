@@ -12,6 +12,7 @@ exec --no-startup-id pa-applet
 exec --no-startup-id variety
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
 exec --no-startup-id picom
+exec --no-startup-id lxqt-policykit-agent
 
 
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -68,7 +69,7 @@ bindsym $mod+e layout tabbed
 bindsym $mod+u split h
 bindsym $mod+i split v
 
-bindsym $mod+p fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 
 bindsym $mod+z restart
