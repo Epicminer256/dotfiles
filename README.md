@@ -28,6 +28,17 @@ yay pa-applet-git
 echo TERMINAL=terminator | sudo tee -a /etc/environment
 ```
 
+Local hostname finding
+```
+sudo pacman -S dnsmasq
+echo -e "local=/local/\nexpand-hosts" | sudo tee -a /etc/dnsmasq.conf
+echo -e "[Resolve]\nDNS=127.0.0.1\nDomains=local" | sudo tee -a /etc/systemd/resolved.conf
+sudo systemctl restart dnsmasq
+sudo systemctl restart systemd-resolved
+sudo systemctl enable dnsmasq
+sudo systemctl enable systemd-resolved
+```
+
 Download some starter wallpapers (saved under /usr/share/backgrounds)
 ```
 sudo pacman -S archlinux-wallpaper
