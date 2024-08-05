@@ -75,6 +75,7 @@ bindsym $mod+Shift+l move right
 
 bindsym $mod+Return exec $TERMINAL
 bindsym $mod+Shift+Return exec $TERMINAL -x nvim
+bindsym $mod+Control+Return exec $TERMINAL -x python ~/.ssh-browse.py
 
 bindsym $mod+Shift+q exec i3-msg exit
 bindsym $mod+r floating toggle
