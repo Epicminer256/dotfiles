@@ -45,6 +45,7 @@ bindsym $mod+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+Right resize grow width 10 px or 10 ppt
 
 bindsym $mod+q kill
+bindsym $mod+p kill
 bindsym $mod+space exec "rofi -show drun"
 bindsym $mod+Tab exec "variety -n && notify-send 'Next Wallpaper'"
 bindsym $mod+Shift+Tab exec "variety -p && notify-send 'Previous Wallpaper'"
@@ -61,8 +62,8 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+Return exec terminator
-
+bindsym $mod+Return exec $TERMINAL
+bindsym $mod+Shift+Return exec $TERMINAL -x nvim
 
 bindsym $mod+Shift+q exec i3-msg exit
 bindsym $mod+r floating toggle
