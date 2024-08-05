@@ -3,6 +3,8 @@
   tab_position = hidden
   scroll_tabbar = True
 [keybindings]
+  page_up_half = Page_Up
+  page_down_half = Page_Down
 [profiles]
   [[default]]
     allow_bold = False
