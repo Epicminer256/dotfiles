@@ -1,5 +1,16 @@
 set $mod Mod4
 
+# fb = foreground background
+# bt = background text
+# at = alert text
+
+set $fb #111111
+set $ft #ff0000
+set $bb #000000
+set $bt #555555
+set $ab $330000
+set $at #ff0000
+
 default_border pixel 0
 default_floating_border pixel 0
 
@@ -108,14 +119,14 @@ bar {
 	position top
 	status_command i3status
 	colors {
-		background #000000
-		statusline #ffA500 #that neon blue
-		separator #666666
+		background $bb
+		statusline $bt #that neon blue
+		separator $fb
 
-		focused_workspace  #4c7899 #285577 #ffffff
-		active_workspace   #333333 #5f676a #ffffff
-		inactive_workspace #333333 #222222 #888888
-		urgent_workspace   #2f343a #900000 #ffffff
+		focused_workspace  $fb $fb $ft
+		active_workspace   $fb $fb $ft
+		inactive_workspace $bb $bb $bt
+		urgent_workspace   $ab $ab $at
 	}
 }
 
@@ -129,3 +140,4 @@ set $ws7 "7."
 set $ws8 "8."
 set $ws9 "9."
 set $ws10 "10."
+
