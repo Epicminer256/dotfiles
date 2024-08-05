@@ -11,7 +11,13 @@ prim=$(tput setaf 1)
 sec=$(tput setaf 3)
 bold=$(tput bold)
 reset=$(tput sgr0)
-PS1="\[$prim$bold\]\h\[$reset\]:\[$sec$bold\]\w\[$reset\]\$ "
+
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+	PS1="\[$prim\](SSH)\[$bold\]\h\[$reset\]:\[$sec$bold\]\w\[$reset\]\$ "
+else
+	PS1="\[$prim$bold\]\h\[$reset\]:\[$sec$bold\]\w\[$reset\]\$ "
+fi
+
 
 
 alias ls='ls --color=auto'
