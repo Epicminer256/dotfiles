@@ -75,7 +75,10 @@ sudo systemctl enable lightdm
 
 # and reboot to apply
 ```
-
+# Thunderbird
+```
+sudo pacman -S thunderbird systray-x-common
+```
 
 
 # Useful stuff
