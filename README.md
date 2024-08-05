@@ -23,6 +23,9 @@ yay librewolf-bin # My browser
 sudo pacman -S wqy-microhei # For chinese and japanese characters in browser
 sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator gtk-chtheme materia-gtk-theme lxqt-policykit keepassxc
 yay pa-applet-git
+
+# To set a default terminal
+echo TERMINAL=terminator | sudo tee -a /etc/environment
 ```
 
 Download some starter wallpapers (saved under /usr/share/backgrounds)
