@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-neofetch
+fastfetch
 
 prim=$(tput setaf 1)
 sec=$(tput setaf 3)
