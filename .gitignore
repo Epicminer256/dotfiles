@@ -2,7 +2,7 @@
 !.gitignore
 !.gitmodules
 !README.md
-
+!.ssh-browse.py
 !.bashrc
 
 !.config
