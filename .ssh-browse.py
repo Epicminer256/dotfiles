@@ -31,4 +31,5 @@ def cmd(cmd):
         sys.stderr.write('{0}: command not found\n'.format(cmd[0]))
     return code
 
+cmd("clear")
 cmd("ssh "+imp+"@"+currenthost)
