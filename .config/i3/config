@@ -19,13 +19,15 @@ gaps outer 2
 
 font pango:PxPlus IBM VGA8 10
 exec --no-startup-id nm-applet
+exec --no-startup-id $TERMINAL -x bash -c "echo YAY Updates && yay && echo Hit enter to quit && read"
 exec --no-startup-id pa-applet
 exec --no-startup-id variety
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
 exec --no-startup-id picom
-exec --no-startup-id lxqt-policykit-agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 exec --no-startup-id steam -silent
 exec --no-startup-id thunderbird 
+exec --no-startup-id sunshine
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
