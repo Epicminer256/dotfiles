@@ -7,6 +7,9 @@
 
 !.config
 
+!.config/yay
+!.config/yay/config.json
+
 !.config/nvim
 !.config/nvim/*
 
