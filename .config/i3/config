@@ -19,7 +19,7 @@ gaps outer 2
 
 font pango:PxPlus IBM VGA8 10
 exec --no-startup-id nm-applet
-exec --no-startup-id $TERMINAL -x bash -c "echo YAY Updates && yay && echo Hit enter to quit && read"
+exec --no-startup-id $TERMINAL -x bash -c "echo YAY Updates && yay"
 exec --no-startup-id pa-applet
 exec --no-startup-id variety
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
