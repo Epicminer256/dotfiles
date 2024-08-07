@@ -14,6 +14,7 @@ git remote add origin https://github.com/epicminer256/dotfiles.git
 git fetch origin
 git reset origin/main
 git retore .
+git submodule update --recursive --init
 ```
 
 Basic packages
