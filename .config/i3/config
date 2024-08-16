@@ -29,6 +29,7 @@ exec --no-startup-id steam -silent
 exec --no-startup-id thunderbird 
 exec --no-startup-id sunshine
 exec --no-startup-id syncthing
+exec --no-startup-id redshift-gtk
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -46,6 +47,7 @@ bindsym $mod+Shift+XF86MonBrightnessDown exec brightnessctl s 10-
 bindsym $mod+Shift+XF86MonBrightnessUp exec brightnessctl s +10
 
 bindsym $mod+Escape exec systemctl suspend
+bindsym $mod+Shift+p exec shutdown now
 
 floating_modifier $mod
 tiling_drag modifier titlebar
