@@ -22,7 +22,9 @@ Basic packages
 yay pxplus-ibm-vga
 yay librewolf-bin # My browser
 sudo pacman -S wqy-microhei # For chinese and japanese characters in browser
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi screen picom xclip xscreensaver xss-lock feh dunst easyeffects terminator gtk-chtheme materia-gtk-theme polkit-gnome keepassxc fastfetch gnome-keyring
+sudo pacman -Syu i3-wm i3status nvim gufw man rofi picom xclip xscreensaver xss-lock feh dunst easyeffects terminator polkit-gnome fastfetch gnome-keyring polybar
+# bloat
+sudo pacman -S baobab screen easyeffects gtk-chtheme materia-gtk-theme keepassxc xarchiver
 yay pa-applet-git
 
 sudo systemctl start ufw
