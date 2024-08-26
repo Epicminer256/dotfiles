@@ -19,7 +19,7 @@ git submodule update --recursive --init
 
 Basic packages
 ```
-yay pxplus-ibm-vga
+yay unifont
 yay librewolf-bin # My browser
 sudo pacman -S wqy-microhei # For chinese and japanese characters in browser
 sudo pacman -Syu i3-wm i3status nvim gufw man rofi picom xclip xscreensaver xss-lock feh dunst easyeffects terminator polkit-gnome fastfetch gnome-keyring polybar

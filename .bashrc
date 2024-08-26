@@ -28,3 +28,5 @@ alias copy="xclip -selection clipboard"
 alias nvimconfig="nvim ~/.config/nvim"
 alias bashrc="nvim ~/.bashrc"
 alias gitupdate="git fetch --all && git reset --hard origin/main && git submodule update --recursive --init"
+
+export PATH=$(gem environment user_gemhome)/bin:$PATH

@@ -8,11 +8,14 @@
 [profiles]
   [[default]]
     allow_bold = False
+    visible_bell = True
+    urgent_bell = True
+    icon_bell = False
     background_darkness = 0.57
     background_type = transparent
     cursor_fg_color = "#000000"
     cursor_bg_color = "#aaaaaa"
-    font = PxPlus IBM VGA8 12
+    font = Unifont Medium 12
     show_titlebar = False
     scrollbar_position = hidden
     palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000cd:#cd00cd:#00cdcd:#faebd7:#404040:#ff0000:#00ff00:#ffff00:#0000ff:#ff00ff:#00ffff:#ffffff"
