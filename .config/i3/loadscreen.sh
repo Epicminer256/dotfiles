@@ -15,5 +15,5 @@ selected=$(echo "$profiles" | rofi -dmenu -i -p "Select Profile:")
 # If a profile was selected, load it with autorandr
 if [ ! -z "$selected" ]; then
     autorandr --load "$selected"
-    nitrogen --restore
+    sleep 0.5 && nitrogen --restore
 fi
