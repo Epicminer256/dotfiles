@@ -21,7 +21,8 @@ fi
 
 
 alias ls='exa -a --git --icons --group-directories-first'
-alias lss='exa -la -T --level=2 --git --icons --total-size --group-directories-first'
+alias lss='exa -la --git --icons --group-directories-first'
+alias lsss='exa -la --git --icons --total-size --group-directories-first'
 alias lsg='git ls-files --others --exclude-standard --cached'
 alias grep='grep --color=auto'
 alias vim='nvim'

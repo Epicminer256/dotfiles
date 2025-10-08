@@ -1,6 +1,8 @@
 # My Dot Files
 
-These are my config files when I use GNU/Linux.
+These are my config files when I use GNU/Linux. Made for i3wm.
+
+Included in my config is `lss` which lists more details for flies and `lsss` which lists file/folder sizes
 
 <!-- Hiiii -->
 
@@ -16,6 +18,7 @@ git reset origin/main
 git retore .
 git submodule update --recursive --init
 ```
+
 
 Install yay (Why doesnt the AUR have any good mirrors???)
 ```
