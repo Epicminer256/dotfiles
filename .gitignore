@@ -4,47 +4,29 @@
 !README.md
 !.ssh-browse.py
 !.bashrc
+!.Xdefaults
 
 !.config
 
 !.config/picom.conf
-!.config/redshift.conf
-
-!.config/polybar
-!.config/polybar/config.ini
 
 !.config/yay
 !.config/yay/config.json
 
 !.config/nvim
 !.config/nvim/*
-
 !.config/nvim/lua
-
 !.config/nvim/lua/pkg-mgr
 !.config/nvim/lua/keybinds
-
 !.config/nvim/lua/pkg-mgr/*
 !.config/nvim/lua/keybinds/*
-
 .config/nvim/lazy-lock.json
 
 !.config/i3
 !.config/i3/config
 
-!.config/variety
-!.config/variety/variety.conf
-
-!.config/sakura
-!.config/sakura/sakura.conf
-
-!.config/appimagelauncher.cfg
-
 !.config/rofi
 !.config/rofi/*
-
-!.config/variety
-!.config/variety/variety.conf
 
 !.local
 !.local/share

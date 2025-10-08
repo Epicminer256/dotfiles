@@ -1,26 +1,23 @@
 set $mod Mod4
-font pango:unifont 10
+font pango:unifont 12
+set $primarycolor #f00000
+set $backgroundcolor #888888
 
-# --- Automatically moves apps to workspaces ---
-# You can also use `xprop | grep WM_CLASS` and click a window to check window class
-# Workspace 2
-assign [class="LibreWolf"] $ws2
-# Workspace 4
+client.focused $primarycolor $primarycolor $primarycolor $primarycolor $primarycolor
+
+# These apps spawn in their workspaces automatically
+# Use `xprop | grep WM_CLASS` to get app class
 assign [class="Lutris"] $ws4
 assign [class="steam"] $ws4
-# Workspace 6
 assign [class="easyeffects"] $ws6
-# Workspace 7
-assign [class="YouTube Music"] $ws7
-# Workspace 10
-assign [class="discord"] $ws10
-assign [class="Mail"] $ws10
-assign [class="thunderbird"] $ws10
+assign [class="YouTube Music"] $ws9
+assign [class="discord"] $ws5
 # -----------------------------------------------
 
 # No Titlebars
-default_border pixel 0
-default_floating_border pixel 0
+default_border pixel 1
+default_floating_border pixel 1
+
 
 # Gaps
 gaps inner 2
@@ -29,24 +26,16 @@ gaps outer 2
 floating_modifier $mod
 tiling_drag modifier titlebar
 
-# Autostart (dex does most autostart apps, like in .config/autostart/)
-exec --no-startup-id polybar
-exec --no-startup-id feh
+# exec --no-startup-id polybar
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom
-exec --no-startup-id variety
-exec --no-startup-id redshift-gtk
-exec --no-startup-id dex -ae i3
+exec --no-startup-id pa-applet
+exec --no-startup-id nm-applet
 
 # App keys
 bindsym $mod+b exec librewolf
 bindsym $mod+t exec thunderbird
 bindsym $mod+space exec "rofi -show drun"
-
-# Wallpaper shortcuts
-bindsym $mod+Tab exec "variety -n && notify-send 'Next Wallpaper'"
-bindsym $mod+Shift+Tab exec "variety -p && notify-send 'Previous Wallpaper'"
-bindsym $mod+d exec "variety -t && notify-send 'Deleted Wallpaper'"
-bindsym $mod+s exec "variety -f && notify-send 'Saved wallpaper'"
 
 # Media keys
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -55,13 +44,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# Brightness (Supports meta and shift keys for fine tuning)
+# Brightness (Supports meta, control, and shift keys for fine tuning)
 bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
 bindsym XF86MonBrightnessUp exec brightnessctl s +10%
-bindsym $mod+XF86MonBrightnessDown exec brightnessctl s 100-
-bindsym $mod+XF86MonBrightnessUp exec brightnessctl s +100
-bindsym $mod+Shift+XF86MonBrightnessDown exec brightnessctl s 10-
-bindsym $mod+Shift+XF86MonBrightnessUp exec brightnessctl s +10
+bindsym Shift+XF86MonBrightnessDown exec brightnessctl s 100-
+bindsym Shift+XF86MonBrightnessUp exec brightnessctl s +100
+bindsym Control+XF86MonBrightnessDown exec brightnessctl s 10-
+bindsym Control+XF86MonBrightnessUp exec brightnessctl s +10
 
 # Shutdown and sleep keys
 bindsym $mod+Escape exec systemctl suspend
@@ -101,8 +90,6 @@ bindsym $mod+Control+Return exec $TERMINAL -x python ~/.ssh-browse.py
 
 bindsym $mod+f fullscreen toggle
 
-
-
 bindsym $mod+m focus parent
 bindsym $mod+n focus child
 
@@ -131,9 +118,16 @@ set $ws1 "1.Main"
 set $ws2 "2.Browser"
 set $ws3 "3.Code"
 set $ws4 "4.Game"
-set $ws5 "5.Reference"
-set $ws6 "6.Background Apps"
-set $ws7 "7.Music"
+set $ws5 "5.Messaging"
+set $ws6 "6."
+set $ws7 "7."
 set $ws8 "8."
-set $ws9 "9."
-set $ws10 "10.Messaging"
+set $ws9 "9.Music"
+set $ws10 "10.Background apps"
+
+bar {
+	colors {
+		focused_workspace #220000 #880000 #ffffffa
+	}
+	status_command i3status
+}
