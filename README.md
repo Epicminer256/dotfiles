@@ -17,24 +17,34 @@ git retore .
 git submodule update --recursive --init
 ```
 
+Install yay (Why doesnt the AUR have any good mirrors???)
+```
+sudo pacman -Syu --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
 Basic packages
 ```
-yay unifont
-yay librewolf-bin # My browser
-sudo pacman -S wqy-microhei # For chinese and japanese characters in browser
-sudo pacman -Syu i3-wm i3status nvim gufw man rofi picom xclip xscreensaver xss-lock feh dunst easyeffects terminator polkit-gnome fastfetch gnome-keyring polybar
-# bloat
-sudo pacman -S baobab screen easyeffects gtk-chtheme materia-gtk-theme keepassxc xarchiver
-yay pa-applet-git
+# Yeah, that first package is a font. It makes japanese and other languages not be boxes
+sudo pacman -Syu wqy-microhei i3-wm i3status nvim man rofi picom xclip xss-lock feh dunst polkit-gnome fastfetch gnome-keyring gufw urxvt otf-firamono-nerd exa
+
+# Extra
+sudo pacman -S zeal xscreensaver
 
 sudo systemctl start ufw
 sudo systemctl enable ufw
 
-# To set a default terminal
-echo TERMINAL=terminator | sudo tee -a /etc/environment
+yay librewolf-bin # My browser, a hardened version of firefox
+yay pa-applet-git
+yay URXVTConfig
+
+# To set a default terminal (I forgot the command for user-only
+echo TERMINAL=urxvt | sudo tee -a /etc/environment
 ```
 
-Local hostname finding
+Local hostname finding (I forgot why .local domains didnt work out of the box)
 ```
 sudo pacman -S dnsmasq
 echo -e "local=/local/\nexpand-hosts" | sudo tee -a /etc/dnsmasq.conf
@@ -50,27 +60,12 @@ Download some starter wallpapers (saved under /usr/share/backgrounds)
 sudo pacman -S archlinux-wallpaper
 ```
 
-Install yay
-```
-sudo pacman -Syu --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-```
-
 Laptop stuff
 ```
 sudo pacman -Syu brightnessctl
 ```
 
-Setup appimage (I like having apps I can save locally and run across distros)
-```
-yay appimagelauncher
-mkdir ~/Applications
-```
-
-
-Setup games
+Some games and stuff idk
 ```
 sudo pacman -Syu lutris wine winetricks
 yay taisei
@@ -79,14 +74,9 @@ yay osu-lazer
 yay prismlauncher
 yay heroic-games-launcher-bin # for epic games
 
-# Enable multilib from pacman
+# FOR STEAM, READ! Enable multilib from pacman to install steam
 sudo nano /etc/pacman.conf
 sudo pacman -Syu steam
-```
-
-Other Productivity
-```
-sudo pacman -Syu ttyper
 ```
 
 LightDM Setup
@@ -96,20 +86,14 @@ sudo systemctl enable lightdm
 
 # and reboot to apply
 ```
-# Thunderbird
-```
-sudo pacman -S thunderbird systray-x-common
-```
-
 
 # Useful stuff
-
+- If using a distro with home directory encryption, DONT!!! Your home dir can fill up super full and cause data loss!!! Typical with ubuuntu distros.
 - Using `pacman -Qe` shows which pacman packages you explicitly installed to your system
 - Just running `yay` will update all pacman packages and AUR packages
 - Use [Vimium](https://vimium.github.io/) to add vim keybinds to the browser
     - Learn the movement keys, then learn how to use "f" and "/". This will make browsing soo much faster
 - I beg you to use ublock origin, even if you are using Brave's built-in adblock
-- Harpoon GOAT in nvim
 - If you made your root directory encrypted, but it never asks for a password, make sure your mkinitpcio config is in the right order and your using the right kernal config.
     - `HOOKS=(base udev autodetect microcode modconf kms keyboard keymap consolefont block encrypt filesystems fsck)`
         - Read [Arch Linux's mkinitcpio](https://wiki.archlinux.org/title/Mkinitcpio) for more info
