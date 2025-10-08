@@ -50,6 +50,8 @@ bindsym Shift+XF86MonBrightnessDown exec brightnessctl s 100-
 bindsym Shift+XF86MonBrightnessUp exec brightnessctl s +100
 bindsym Control+XF86MonBrightnessDown exec brightnessctl s 10-
 bindsym Control+XF86MonBrightnessUp exec brightnessctl s +10
+bindsym $mod+c exec /bin/bash ~/.config/i3/loadscreen.sh
+bindsym $mod+v exec /bin/bash ~/.config/i3/savescreen.sh
 
 # Shutdown and sleep keys
 bindsym $mod+Escape exec systemctl suspend
