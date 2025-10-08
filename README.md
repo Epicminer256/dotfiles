@@ -31,7 +31,7 @@ makepkg -si
 Basic packages
 ```
 # Yeah, that first package is a font. It makes japanese and other languages not be boxes
-sudo pacman -Syu wqy-microhei i3-wm i3status nvim man rofi picom xclip xss-lock feh dunst polkit-gnome fastfetch gnome-keyring gufw urxvt otf-firamono-nerd exa
+sudo pacman -Syu wqy-microhei i3-wm i3status nvim man rofi picom xclip xss-lock feh dunst polkit-gnome fastfetch gnome-keyring gufw urxvt otf-firamono-nerd exa arandr
 
 # Extra
 sudo pacman -S zeal xscreensaver

@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:unifont 12
+font pango:monospace 9
 set $primarycolor #f00000
 set $backgroundcolor #888888
 
@@ -9,8 +9,8 @@ client.focused $primarycolor $primarycolor $primarycolor $primarycolor $primaryc
 # Use `xprop | grep WM_CLASS` to get app class
 assign [class="Lutris"] $ws4
 assign [class="steam"] $ws4
-assign [class="easyeffects"] $ws6
-assign [class="YouTube Music"] $ws9
+assign [class="easyeffects"] $ws10
+assign [class="YouTube Music"] $ws6
 assign [class="discord"] $ws5
 # -----------------------------------------------
 
@@ -34,7 +34,6 @@ exec --no-startup-id nm-applet
 
 # App keys
 bindsym $mod+b exec librewolf
-bindsym $mod+t exec thunderbird
 bindsym $mod+space exec "rofi -show drun"
 
 # Media keys
@@ -85,8 +84,6 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 bindsym $mod+Return exec $TERMINAL
-bindsym $mod+Shift+Return exec $TERMINAL -x nvim
-bindsym $mod+Control+Return exec $TERMINAL -x python ~/.ssh-browse.py
 
 bindsym $mod+f fullscreen toggle
 
@@ -114,15 +111,15 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-set $ws1 "1.Main"
-set $ws2 "2.Browser"
-set $ws3 "3.Code"
+set $ws1 "1.Main1"
+set $ws2 "2.Main2"
+set $ws3 "3.Main3"
 set $ws4 "4.Game"
 set $ws5 "5.Messaging"
-set $ws6 "6."
+set $ws6 "6.Music"
 set $ws7 "7."
 set $ws8 "8."
-set $ws9 "9.Music"
+set $ws9 "9."
 set $ws10 "10.Background apps"
 
 bar {
